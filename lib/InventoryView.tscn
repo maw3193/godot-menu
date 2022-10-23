@@ -2,12 +2,19 @@
 
 [ext_resource path="res://lib/InventoryView.gd" type="Script" id=2]
 
-[node name="InventoryView" type="Tree"]
+[node name="InventoryView" type="ScrollContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
 margin_top = 32.0
 margin_right = -4.0
 margin_bottom = -4.0
-columns = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource( 2 )
+
+[node name="Contents" type="VBoxContainer" parent="."]
+margin_right = 1016.0
+margin_bottom = 564.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
